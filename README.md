@@ -160,7 +160,7 @@ public extension UIDevice {
             case "iPhone13,3":                              return "iPhone 12"
             case "iPhone13,5":                              return "iPhone 12 Pro"
             case "iPhone13,4", "iPhone13.7":                return "iPhone 12 Pro Max"
-
+            
             case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
             case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad (3rd generation)"
             case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad (4th generation)"
@@ -205,6 +205,7 @@ public extension UIDevice {
 
 print("当前设备为：\(UIDevice.modelName)")
 ```
+ 不在更新此方法，建议使用DeviceKit框架来判断设备 https://github.com/devicekit/DeviceKit
 
 7.  Swift-----访问控制（private、fileprivate、internal、public、open）
 　　在swift中，访问修饰符有五种，分别是：private、fileprivate、internal、public、open。其中fileprivate和open是swift 3 新添加的。由于之前的访问控制符是基于文件的，不是基于类的。这样会有问题，故swift 3 增加了两个修饰符，对原来的private、public进行了细分。
